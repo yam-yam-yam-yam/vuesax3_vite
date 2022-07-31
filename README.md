@@ -6,19 +6,19 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
-### vuesax Version
+## vuesax Version
 
 vuasax3@4.0.22
 
-### upload
+## upload
 
-#### 2022-08-01
+### 2022-08-01
 
 - vs-alert
 
-### 후기
+## 후기
 
-#### 2022-08-01
+### 2022-08-01
 
 - 보기엔 정말 이뻐보였지만 커스텀을 지정된 props로 하는게 아닌 스타일 시트 언어를 이용하여 커스텀해야하는게 몇몇 보임
 - alert만 공부해보았지만 좋은 해결법이 없으려나..
