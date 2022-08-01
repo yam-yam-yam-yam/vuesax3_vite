@@ -14,14 +14,17 @@ const currentComponent = ref(components[0])
 
 <style>
 @font-face {
-    font-family: 'EarlyFontDiary';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'ACCchildrenheartOTF-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 * {
-  font-family: 'EarlyFontDiary';
-  font-size:15px;
+  font-family: ACCchildrenheartOTF-Regular;  
+} 
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
 }
 .vs-notifications {
   box-shadow: 0px 3px 5px #777777 !important; 

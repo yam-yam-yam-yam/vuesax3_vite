@@ -26,30 +26,20 @@ const active = ref(true);
         <p>title="햄버거는" / 타이틀을 넣을 수 있지만 못생겨서 굳이 넣지않을듯 or 커스텀해주거나</p>
     </vs-card>
 
-    <vs-card>
-        <vs-alert class="vs-alert" :active="active" closable :icon="'mood'" close-icon="cancel">
-            <p>이곳에 쓰레기 무단투기 하다 적발시,</p>
-            <p>욕이 배따고 들어가는걸 보여드립니다.</p>
+    <vs-card style="max-width:550px">
+        <vs-alert class="vs-alert text-align-left" :active="active" closable close-icon="bxs-chat" title="Vuesax Alert Icon" style="width:100%;">
+            Vuesax (pronounced / vjusacksː /, as view sacks) is a UI components framework created with Vuejs to make projects easily and with a Unique and pleasant style, Vuesax is created from scratch and designed for all types of developed from the frontend lover to the backend that wants to easily create your visual approach to the end user
         </vs-alert>
         <button @click="active = !active" style="border:1px solid black;">{{active ? '비' : ''}}활성화 하기</button>
-        <p>1. 타이틀은 못생겼다.. 쓸일이 없을듯</p>
-        <p>2. closable은 어떻게 사용하는지 모르겠다, 디자인도 이상해서 커스텀 해줘야함</p>
-        <p>3. clasable 디자인은 .con-x의 background를 none, color를 primary 색으로 커스텀함</p>
-        <p>4. .vs-alert의 padding을 0으로 커스텀함</p>
-        <p>5. .vs-alert.con-icon의 padding-left을 0으로 커스텀함</p>
+        <p>1. vs-alert의 높은 패딩값을 없애고 좌측 둥근테두리를 없앴다.</p>
+        <p>2. vuesax4의 디자인을 따라해 after를 추가했다. (좌측 진한 경계선)</p>
+        <p>3. vs-alert에 text-align 클래스를 넣을시 텍스트 좌측정렬되게 커스텀함</p>
+        <p>4. clasable 디자인은 .con-x의 background를 none, color를 primary 색으로 커스텀함 | cloasble 기능은 어떻게 사용하는지 모르겠다 | 그냥 단순 아이콘기능으로 사용할 생각</p>
+        <p>5. .vs-alert.con-icon의 padding-left을 0으로 커스텀함 / 하지만 아이콘을 쓸 일이 없을듯</p>
     </vs-card>
 </template>
 
 <style scoped>
-/* 앞으로 사용할 커스텀 부분 */
-.vs-alert {
-  padding: 0% 0% !important;
-}
-.vs-alert.con-icon {
-  padding-left: 0px !important;
-}
-
-/* 이 프로젝트의 css부분 */
 button {
     margin-top:10px;
 }
@@ -59,9 +49,49 @@ button {
 </style>
 
 <style>
-/* 앞으로 사용할 커스텀 부분 */
+.vs-alert {
+  padding: 0% 0% !important;
+  border-radius: 0px 5px 5px 0px !important;
+}
+.vs-alert.text-align-left {
+    text-align: initial !important;
+}
+.vs-alert:after {
+    content: "";
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(var(--vs-primary),.4) !important;
+}
+
+/* 타이틀 */
+.vs-alert > h4 {
+    font-weight: 900 !important;
+    font-size: 1.02rem !important;
+    box-shadow: 0 0px 0px 0px rgba(var(--vs-primary),.7) !important;
+}
+
+/* 클로즈아이콘 */
+.vs-alert--close:hover {
+    box-shadow:none !important;
+}
 .con-x {
     background: none !important;
     color: rgba(var(--vs-primary),1) !important;
+    cursor: inherit !important;
+}
+
+/* 콘텐츠 */
+.vs-alert > div.vs-alert {
+    width: 100% !important;
+    padding:10px !important;
+    font-weight: 100 !important;
+}
+
+/* 콘텐츠아이콘 */
+.vs-alert.con-icon {
+  padding-left: 0px !important;
 }
 </style>
