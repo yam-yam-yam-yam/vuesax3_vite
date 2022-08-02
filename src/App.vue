@@ -1,15 +1,23 @@
 <script setup>
 import { ref } from 'vue'
 import AlertComponent from "./components/Alert.vue";
+import AvatarComponent from "./components/Avatar.vue";
+import LoadlingComponent from "./components/Loadling.vue";
 
 const components = [
-  AlertComponent
+  AlertComponent,
+  AvatarComponent,
+  LoadlingComponent
 ]
 const currentComponent = ref(components[0])
 </script>
 
 <template>
-  <component :is="currentComponent" />
+  <vs-tabs>
+    <vs-tab v-for="component,i in components" :key="`${component}_${i}`" :label="component.__name" @click="currentComponent = components[i]">
+      <component :is="currentComponent" />
+    </vs-tab>
+  </vs-tabs>
 </template>
 
 <style>
@@ -23,10 +31,8 @@ const currentComponent = ref(components[0])
   font-family: ACCchildrenheartOTF-Regular;  
 } 
 
-.notosanskr * { 
- font-family: 'Noto Sans KR', sans-serif;
-}
-.vs-notifications {
-  box-shadow: 0px 3px 5px #777777 !important; 
+/* 전체적용 커스텀 */
+button:focus {
+  outline: none !important;
 }
 </style>
