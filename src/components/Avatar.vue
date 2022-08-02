@@ -45,6 +45,7 @@ import { ref } from 'vue'
         <vs-avatar color="warning" icon="filter_vintage" />
         <p>아이콘 적용</p>
         <p>icon="date_range"</p>
+        <p>배지 위치를 커스텀 함</p>
     </vs-card>
 </template>
 
