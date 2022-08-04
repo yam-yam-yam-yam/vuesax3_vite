@@ -3,12 +3,16 @@ import { ref } from 'vue'
 import AlertComponent from "./components/Alert.vue";
 import AvatarComponent from "./components/Avatar.vue";
 import ButtonComponent from "./components/Button.vue"
+import CardComponent from "./components/Card.vue"
+import CheckboxComponent from "./components/Checkbox.vue"
 import LoadlingComponent from "./components/Loadling.vue";
 
 const components = [
   AlertComponent,
   AvatarComponent,
   ButtonComponent,
+  CardComponent,
+  CheckboxComponent,
   LoadlingComponent
 ]
 const currentComponent = ref(components[0])
