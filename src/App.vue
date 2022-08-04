@@ -5,6 +5,7 @@ import AvatarComponent from "./components/Avatar.vue";
 import ButtonComponent from "./components/Button.vue"
 import CardComponent from "./components/Card.vue"
 import CheckboxComponent from "./components/Checkbox.vue"
+import ChipComponent from "./components/Chip.vue"
 import LoadlingComponent from "./components/Loadling.vue";
 
 const components = [
@@ -13,6 +14,7 @@ const components = [
   ButtonComponent,
   CardComponent,
   CheckboxComponent,
+  ChipComponent,
   LoadlingComponent
 ]
 const currentComponent = ref(components[0])
