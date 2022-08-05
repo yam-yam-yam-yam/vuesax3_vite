@@ -79,7 +79,7 @@ export default {
 
     <vs-card>
         <vs-button @click="prompt2=true">Alert Primary</vs-button>
-        <vs-prompt :active="prompt2" @accept="prompt1=false" @close="prompt1=false" @cancel="prompt1=false" :buttons-hidden="true">
+        <vs-prompt :active="prompt2" @accept="prompt2=false" @close="prompt2=false" @cancel="prompt2=false" :buttons-hidden="true">
             <div class="con-exemple-prompt">
                 Enter the security code
             </div>
