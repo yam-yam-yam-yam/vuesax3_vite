@@ -8,6 +8,7 @@ import CheckboxComponent from "./components/Checkbox.vue"
 import ChipComponent from "./components/Chip.vue"
 import CollapseComponent from "./components/Collapse.vue"
 import DialogsComponent from "./components/Dialogs.vue"
+import DividerComponent from "./components/Divider.vue"
 import LoadlingComponent from "./components/Loadling.vue";
 
 const components = [
@@ -19,6 +20,7 @@ const components = [
   ChipComponent,
   CollapseComponent,
   DialogsComponent,
+  DividerComponent,
   LoadlingComponent
 ]
 const currentComponent = ref(components[0])
