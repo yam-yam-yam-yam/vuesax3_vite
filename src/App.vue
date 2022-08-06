@@ -9,6 +9,9 @@ import ChipComponent from "./components/Chip.vue"
 import CollapseComponent from "./components/Collapse.vue"
 import DialogsComponent from "./components/Dialogs.vue"
 import DividerComponent from "./components/Divider.vue"
+import ImagesComponent from "./components/Images.vue"
+import InputComponent from './components/Input.vue'
+import ListComponent from './components/List.vue'
 import LoadlingComponent from "./components/Loadling.vue";
 
 const components = [
@@ -21,6 +24,9 @@ const components = [
   CollapseComponent,
   DialogsComponent,
   DividerComponent,
+  ImagesComponent,
+  InputComponent,
+  ListComponent,
   LoadlingComponent
 ]
 const currentComponent = ref(components[0])
