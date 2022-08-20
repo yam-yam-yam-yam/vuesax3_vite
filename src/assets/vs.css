@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'ACCchildrenheartOTF-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+  font-family: ACCchildrenheartOTF-Regular;  
+} 
+
+/* 프로젝트용 css 시작 */
+button:focus {
+  outline: none !important;
+}
+.vs-card--content > p {
+    margin-top:10px;
+}
+/* 프로젝트용 css 끝 */
+
+ /* alert 시작*/
+.vs-alert {
+  padding: 0% 0% !important;
+  border-radius: 0px 5px 5px 0px !important;
+}
+.vs-alert.text-align-left {
+    text-align: initial !important;
+}
+.vs-alert:after {
+    content: "";
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(var(--vs-primary),.4) !important;
+}
+
+/* 타이틀 */
+.vs-alert > h4 {
+    font-weight: 900 !important;
+    font-size: 1.02rem !important;
+    box-shadow: 0 0px 0px 0px rgba(var(--vs-primary),.7) !important;
+}
+
+/* 클로즈아이콘 */
+.vs-alert--close:hover {
+    box-shadow:none !important;
+}
+.con-x {
+    background: none !important;
+    color: rgba(var(--vs-primary),1) !important;
+    cursor: inherit !important;
+}
+
+/* 콘텐츠 */
+.vs-alert > div.vs-alert {
+    width: 100% !important;
+    padding:10px !important;
+    font-weight: 100 !important;
+}
+
+/* 콘텐츠아이콘 */
+.vs-alert.con-icon {
+  padding-left: 0px !important;
+}
+/* alert 끝 */
+
+/* avatar 시작 */
+.con-vs-avatar {
+    border-radius: 25% !important;
+}
+.vs-avatar--count.badgeNumber {
+    top: -35% !important;
+    right: -20% !important;
+}
+/* avatar 끝 */
+
+/* button 시작 */
+.vs-button {
+    border-radius: 12px !important;
+}
+.vs-button-primary.vs-button-border {
+    border:2px solid rgba(var(--vs-primary),1) !important; 
+}
+/* button 끝 */
+
+/* checkbox 시작 */
+.vs-checkbox {
+    width:15px !important;
+    height:15px !important;
+    border-radius: 30% !important;
+    padding: 2.2% !important;
+}
+.vs-checkbox--check {
+    height: initial !important;
+}
+.vs-checkbox--icon {
+    font-size:16px !important;
+}
+/* checkbox 끝 */
+
+/* collapse 시작 */
+.shadow.vs-collapse > .open-item {
+    box-shadow: 0 10px 5px 0 rgb(0 0 0 / 5%) !important;
+}
+/* collapse 끝 */
+
+/* dialogs 시작 */
+.vs-dialog {
+    border-radius: 20px !important;
+}
+.con-vs-dialog .vs-dialog-header {
+    padding: 1% 0%;
+    background: none !important;
+}
+.con-vs-dialog span.after {
+    display:none !important;
+}
+.con-vs-dialog .dialog-title {
+    text-align: center !important;
+}
+.vs-dialog .vs-dialog-header {
+    color:initial !important;
+}
+.vs-dialog footer {
+    padding:2% 0% !important;
+}
+.vs-dialog footer button {
+    font-size:12.8px;
+    margin: 0% 1% !important;
+    height:34px;
+}
+/* dialogs 끝 */
+
+/* loadling 시작 */
+.con-vs-loading {
+    position:absolute !important;
+}
+.vs-loading.default .effect-1 {
+    position: absolute !important;
+    width: 80% !important;
+    height: 80% !important;
+    border: 3px solid rgba(var(--vs-primary),1) !important;
+    border-radius: none !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    -webkit-animation: corners 1s ease infinite !important;
+    animation: corners 1s ease infinite !important;
+}
+.vs-loading.default .effect-3, .vs-loading.default .effect-2 {
+    display:none !important;
+}
+/* loadling 끝 */

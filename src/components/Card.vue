@@ -29,10 +29,6 @@ import { ref } from 'vue'
     </vs-card>
 </template>
 
-<style scoped>
-
-</style>
-
 <style>
 
 </style>

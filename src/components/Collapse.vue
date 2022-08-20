@@ -196,7 +196,5 @@ import { ref } from 'vue'
 </template>
 
 <style>
-.shadow.vs-collapse > .open-item {
-    box-shadow: 0 10px 5px 0 rgb(0 0 0 / 5%) !important;
-}
+
 </style>

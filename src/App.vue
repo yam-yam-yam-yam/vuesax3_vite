@@ -41,18 +41,5 @@ const currentComponent = ref(components[0])
 </template>
 
 <style>
-@font-face {
-  font-family: 'ACCchildrenheartOTF-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  font-family: ACCchildrenheartOTF-Regular;  
-} 
 
-/* 전체적용 커스텀 */
-button:focus {
-  outline: none !important;
-}
 </style>

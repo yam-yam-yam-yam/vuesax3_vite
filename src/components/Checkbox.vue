@@ -43,16 +43,5 @@ const data3 = ref([]);
 </style>
 
 <style>
-.vs-checkbox {
-    width:15px !important;
-    height:15px !important;
-    border-radius: 30% !important;
-    padding: 2.2% !important;
-}
-.vs-checkbox--check {
-    height: initial !important;
-}
-.vs-checkbox--icon {
-    font-size:16px !important;
-}
+
 </style>

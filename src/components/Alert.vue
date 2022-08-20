@@ -49,49 +49,5 @@ button {
 </style>
 
 <style>
-.vs-alert {
-  padding: 0% 0% !important;
-  border-radius: 0px 5px 5px 0px !important;
-}
-.vs-alert.text-align-left {
-    text-align: initial !important;
-}
-.vs-alert:after {
-    content: "";
-    left: 0;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(var(--vs-primary),.4) !important;
-}
 
-/* 타이틀 */
-.vs-alert > h4 {
-    font-weight: 900 !important;
-    font-size: 1.02rem !important;
-    box-shadow: 0 0px 0px 0px rgba(var(--vs-primary),.7) !important;
-}
-
-/* 클로즈아이콘 */
-.vs-alert--close:hover {
-    box-shadow:none !important;
-}
-.con-x {
-    background: none !important;
-    color: rgba(var(--vs-primary),1) !important;
-    cursor: inherit !important;
-}
-
-/* 콘텐츠 */
-.vs-alert > div.vs-alert {
-    width: 100% !important;
-    padding:10px !important;
-    font-weight: 100 !important;
-}
-
-/* 콘텐츠아이콘 */
-.vs-alert.con-icon {
-  padding-left: 0px !important;
-}
 </style>

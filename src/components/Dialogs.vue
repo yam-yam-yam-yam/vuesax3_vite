@@ -111,28 +111,5 @@ export default {
 </template>
 
 <style>
-.vs-dialog {
-    border-radius: 20px !important;
-}
-.con-vs-dialog .vs-dialog-header {
-    padding: 1% 0%;
-    background: none !important;
-}
-.con-vs-dialog span.after {
-    display:none !important;
-}
-.con-vs-dialog .dialog-title {
-    text-align: center !important;
-}
-.vs-dialog .vs-dialog-header {
-    color:initial !important;
-}
-.vs-dialog footer {
-    padding:2% 0% !important;
-}
-.vs-dialog footer button {
-    font-size:12.8px;
-    margin: 0% 1% !important;
-    height:34px;
-}
+
 </style>

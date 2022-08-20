@@ -1,16 +1,14 @@
 <script setup>
-import { reactive, onMounted } from 'vue'
-let active = reactive(false);
+import { reactive } from 'vue'
 </script>
 
 <script>
 export default {
     methods: {
-        openLoading(type) {
+        openLoading() {
             this.active = true;
             this.$vs.loading({
-                container: this.$refs.loadableButton,
-                text: 'ㅈㄴ 까다롭네'
+                container: this.$refs.loadableButton
             })
 
             setTimeout( ()=> {
@@ -28,8 +26,8 @@ export default {
         <vs-alert class="vs-alert">
             햄버거는 핫크리스피 햄버거
         </vs-alert>
-        <button @click="openLoading('point')" style="border:1px solid black;">{{active ? '비' : ''}}활성화 하기</button>
-        <div ref="loadableButton" style="width:500px; height:500px; background-color:#bbbbbb;">빈 박스</div>
+        <button @click="openLoading()" style="border:1px solid black;">활성화 하기</button>
+        <div ref="loadableButton" style="width:500px; height:500px; background-color:#bbbbbb; position:relative">빈 박스</div>
     </vs-card>
 
     <vs-card>
@@ -48,23 +46,6 @@ export default {
 </template>
 
 <style>
-.vs-loading {
-    position:absolute !important;
-}
 
-.vs-loading.default .effect-1 {
-    position: absolute !important;
-    width: 80% !important;
-    height: 80% !important;
-    border: 3px solid rgba(var(--vs-primary),1) !important;
-    border-radius: none !important;
-    -webkit-box-sizing: border-box !important;
-    box-sizing: border-box !important;
-    -webkit-animation: corners 1s ease infinite !important;
-    animation: corners 1s ease infinite !important;
-}
-.vs-loading.default .effect-3, .vs-loading.default .effect-2 {
-    display:none !important;
-}
 </style>
 

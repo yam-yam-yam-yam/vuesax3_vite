@@ -49,18 +49,6 @@ import { ref } from 'vue'
     </vs-card>
 </template>
 
-<style scoped>
-.vs-card--content > p {
-    margin-top:10px;
-}
-</style>
-
 <style>
-.con-vs-avatar {
-    border-radius: 25% !important;
-}
-.vs-avatar--count.badgeNumber {
-    top: -35% !important;
-    right: -20% !important;
-}
+
 </style>

@@ -57,15 +57,6 @@ import { ref } from 'vue'
     </vs-card>
 </template>
 
-<style scoped>
-
-</style>
-
 <style>
-.vs-button {
-    border-radius: 12px !important;
-}
-.vs-button-primary.vs-button-border {
-    border:2px solid rgba(var(--vs-primary),1) !important; 
-}
+
 </style>
