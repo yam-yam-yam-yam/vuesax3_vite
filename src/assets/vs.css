@@ -132,6 +132,46 @@ button:focus {
 }
 /* dialogs 끝 */
 
+/* input 시작 */
+.vs-input {
+    padding: 7px 10px 7px 13px !important;
+}
+.vs-inputx {
+    border-radius: 12px !important;
+    border: 2px solid transparent !important;
+    background: #f0f2f3 !important;
+    color: rgba(var(--vs-text),1) !important;
+    -webkit-transition: all .25s ease !important;
+    transition: all .25s ease !important;
+    /* padding: 7px 0.8rem 7px 0.8rem !important; */
+}
+.vs-input.isFoucs .vs-input--input:focus {
+    border: 2px solid transparent !important;
+}
+.vs-input--input:focus {
+    box-shadow: none !important;
+}
+.vs-input--placeholder {
+    text-align: left !important;
+}
+.vuesax-app-is-ltr .vs-input--label {
+    display: flex !important;
+    font-size: 0.7rem !important;
+}
+.icon-inputx {
+    font-size:1rem !important;
+}
+.is-focus .vs-input--placeholder {
+    padding:0px !important;
+}
+.input-icon-validate > i {
+    font-size:1rem !important; 
+}
+.span-text-validation {
+    text-align: left !important;
+}
+/* input 끝 */
+
 /* loadling 시작 */
 .con-vs-loading {
     position:absolute !important;
