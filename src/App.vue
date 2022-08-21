@@ -14,6 +14,7 @@ import InputComponent from './components/Input.vue'
 import ListComponent from './components/List.vue'
 import LoadlingComponent from "./components/Loadling.vue";
 import NavbarComponent from "./components/Navbar.vue";
+import NotificationsComponent from "./components/Notifications.vue"
 
 const components = [
   AlertComponent,
@@ -29,7 +30,8 @@ const components = [
   InputComponent,
   ListComponent,
   LoadlingComponent,
-  NavbarComponent
+  NavbarComponent,
+  NotificationsComponent
 ]
 const currentComponent = ref(components[0])
 </script>

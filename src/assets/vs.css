@@ -191,3 +191,28 @@ button:focus {
     display:none !important;
 }
 /* loadling 끝 */
+
+/* notifications 시작 */
+.vs-notifications {
+    --vs-color: var(--vs-background) !important;
+    --vs-border: var(--vs-background) !important;
+    --vs-opacity: .6 !important;
+    padding:13px !important;
+    border-radius: 20px !important;
+    -webkit-box-shadow: 0 10px 30px -5px rgba(0,0,0,var(--vs-shadow-opacity)) !important;
+    box-shadow: 0 10px 30px -5px #b0b2b3 !important;
+    overflow: hidden !important;
+    -webkit-clip-path: circle(145% at 100% 50%) !important;
+    clip-path: circle(145% at 100% 50%) !important;
+    background: rgba(var(--vs-color),1) !important;
+    /* color: rgba(var(--vs-text),1) !important; */
+    margin: 3px 10px !important;
+}
+.vs-notifications h3 {
+    font-size: 1rem !important;
+}
+.vs-notifications p {
+    font-size: 0.75rem !important;
+    line-height: 1.15rem !important;
+}
+/* notifications 끝 */
