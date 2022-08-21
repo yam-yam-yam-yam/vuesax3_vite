@@ -13,6 +13,7 @@ import ImagesComponent from "./components/Images.vue"
 import InputComponent from './components/Input.vue'
 import ListComponent from './components/List.vue'
 import LoadlingComponent from "./components/Loadling.vue";
+import NavbarComponent from "./components/Navbar.vue";
 
 const components = [
   AlertComponent,
@@ -27,7 +28,8 @@ const components = [
   ImagesComponent,
   InputComponent,
   ListComponent,
-  LoadlingComponent
+  LoadlingComponent,
+  NavbarComponent
 ]
 const currentComponent = ref(components[0])
 </script>
