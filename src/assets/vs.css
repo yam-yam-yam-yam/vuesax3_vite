@@ -216,3 +216,15 @@ button:focus {
     line-height: 1.15rem !important;
 }
 /* notifications 끝 */
+
+/* pagination 시작 */
+.vs-pagination--li.is-current .effect {
+    border-radius: 12px !important;
+    -webkit-transition: all .25s ease !important;
+    transition: all .25s ease !important;
+    color: #fff;
+    -webkit-box-shadow: 0 5px 20px 0 rgba(var(--vs-color),.3) !important;
+    box-shadow: 0 5px 20px 0 rgba(var(--vs-color),.3) !important;
+    cursor: default !important;
+}
+/* pagination 끝 */
