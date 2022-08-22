@@ -16,6 +16,7 @@ import LoadlingComponent from "./components/Loadling.vue";
 import NavbarComponent from "./components/Navbar.vue";
 import NotificationsComponent from "./components/Notifications.vue"
 import PagenationComponent from "./components/Pagination.vue"
+import RadioComponent from "./components/Radio.vue"
 
 const components = [
   AlertComponent,
@@ -33,7 +34,8 @@ const components = [
   LoadlingComponent,
   NavbarComponent,
   NotificationsComponent,
-  PagenationComponent
+  PagenationComponent,
+  RadioComponent
 ]
 const currentComponent = ref(components[0])
 </script>
