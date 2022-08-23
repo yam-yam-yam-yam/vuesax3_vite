@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, shallowRef } from 'vue'
 import AlertComponent from "./components/Alert.vue";
 import AvatarComponent from "./components/Avatar.vue";
 import ButtonComponent from "./components/Button.vue"
@@ -17,6 +17,7 @@ import NavbarComponent from "./components/Navbar.vue";
 import NotificationsComponent from "./components/Notifications.vue"
 import PagenationComponent from "./components/Pagination.vue"
 import RadioComponent from "./components/Radio.vue"
+import SelectComponent from "./components/Select.vue"
 
 const components = [
   AlertComponent,
@@ -35,9 +36,10 @@ const components = [
   NavbarComponent,
   NotificationsComponent,
   PagenationComponent,
-  RadioComponent
+  RadioComponent,
+  SelectComponent
 ]
-const currentComponent = ref(components[0])
+const currentComponent = shallowRef(components[0])
 </script>
 
 <template>

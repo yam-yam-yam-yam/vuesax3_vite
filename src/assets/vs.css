@@ -228,3 +228,53 @@ button:focus {
     cursor: default !important;
 }
 /* pagination 끝 */
+
+/* select 시작 */
+.input-select {
+    /* padding: 7px 10px 7px 13px !important; */
+}
+.input-select {
+    border-radius: 12px !important;
+    border: 2px solid transparent !important;
+    background: #f0f2f3 !important;
+    color: rgba(var(--vs-text),1) !important;
+    -webkit-transition: all .25s ease !important;
+    transition: all .25s ease !important;
+    /* padding: 7px 0.8rem 7px 0.8rem !important; */
+}
+.con-select {
+    text-align: left !important;
+}
+.vs-select--item {
+    -webkit-transition: all .25s ease !important;
+    transition: all .25s ease !important;
+    color: rgba(var(--vs-text),1) !important;
+    border-radius: 5px !important;
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,var(--vs-shadow-opacity)) !important;
+    box-shadow: 0 0 0 0 rgba(0,0,0,var(--vs-shadow-opacity)) !important;
+    align-items: cneter !important;
+    border: none !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    font-size:0.89rem !important;
+}
+.vs-select--item:hover {
+    border: none !important;
+    /* color: rgba(var(--vs-primary),1) !important; */
+}
+.vs-select--item:hover span {
+    display:block;
+    transition: all .4s  !important;
+    transform: translate(5px, 0px) !important;
+}
+.vs-select--item.activex i {
+    font-size: 1em !important;
+}
+.vs-select-primary .vs-select--item.activex i {
+    color:rgba(var(--vs-primary),1) !important;
+}
+.vs-select--options .vs-component {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+}
+/* select 끝 */
